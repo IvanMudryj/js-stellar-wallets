@@ -1,5 +1,5 @@
-import { Transaction } from "stellar-base";
-import { FeeBumpTransaction } from "stellar-sdk";
+import { FeeBumpTransaction } from "ivanm-js-stellar-sdk";
+import { Transaction } from "skyhitz-stellar-base";
 import { ApprovalResponseStatus } from "../constants/sep8";
 import {
   ApprovalResponse,
@@ -60,9 +60,7 @@ export class ApprovalProvider {
     if (!response.ok) {
       const responseText = await response.text();
       throw new Error(
-        `Error sending base64-encoded transaction to ${
-          this.approvalServer
-        }: error code ${response.status}, status text: "${responseText}"`,
+        `Error sending base64-encoded transaction to ${this.approvalServer}: error code ${response.status}, status text: "${responseText}"`,
       );
     }
 
@@ -110,9 +108,7 @@ export class ApprovalProvider {
     if (!response.ok) {
       const responseText = await response.text();
       throw new Error(
-        `Error sending POST request to ${params.action_url}: error code ${
-          response.status
-        }, status text: "${responseText}"`,
+        `Error sending POST request to ${params.action_url}: error code ${response.status}, status text: "${responseText}"`,
       );
     }
 

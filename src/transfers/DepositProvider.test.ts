@@ -1,5 +1,5 @@
+import StellarSdk from "ivanm-js-stellar-sdk";
 import sinon from "sinon";
-import StellarSdk from "stellar-sdk";
 import { DepositProvider } from "./DepositProvider";
 
 import { TransactionsResponse } from "../fixtures/TransactionsResponse";

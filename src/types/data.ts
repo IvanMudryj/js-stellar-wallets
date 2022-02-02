@@ -1,12 +1,12 @@
 import BigNumber from "bignumber.js";
-import { AssetType, Memo, MemoType } from "stellar-base";
 import {
   BadRequestError,
   Horizon,
   NetworkError,
   NotFoundError,
   ServerApi,
-} from "stellar-sdk";
+} from "ivanm-js-stellar-sdk";
+import { AssetType, Memo, MemoType } from "skyhitz-stellar-base";
 import { EffectType } from "../constants/data";
 
 interface NotFundedError {

@@ -1,4 +1,3 @@
-import sinon from "sinon";
 import {
   Account,
   Asset,
@@ -9,7 +8,8 @@ import {
   Networks,
   Operation,
   TransactionBuilder,
-} from "stellar-sdk";
+} from "ivanm-js-stellar-sdk";
+import sinon from "sinon";
 import { getRegulatedAssetsInTx } from "./getRegulatedAssetsInTx";
 
 describe("getRegulatedAssetsInTx with no ops moving assets", () => {

@@ -1,4 +1,4 @@
-import StellarSdk, { Transaction, Utils } from "stellar-sdk";
+import StellarSdk, { Transaction, Utils } from "ivanm-js-stellar-sdk";
 
 import { albedoHandler } from "./keyTypeHandlers/albedo";
 import { freighterHandler } from "./keyTypeHandlers/freighter";
@@ -372,9 +372,7 @@ export class KeyManager {
     ) {
       throw new Error(
         `
-            Network mismatch: the transfer server expects "${
-              json.network_passphrase
-            }",
+            Network mismatch: the transfer server expects "${json.network_passphrase}",
             but you're using "${keyNetwork}"
             `,
       );

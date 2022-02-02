@@ -1,4 +1,4 @@
-import { Networks } from "stellar-sdk";
+import { Networks } from "ivanm-js-stellar-sdk";
 import { generatePlaintextKey } from "../fixtures/keys";
 import { DataProvider } from "./DataProvider";
 

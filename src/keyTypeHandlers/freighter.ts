@@ -1,5 +1,9 @@
 import freighterApi from "@stellar/freighter-api";
-import { Networks, Transaction, TransactionBuilder } from "stellar-sdk";
+import {
+  Networks,
+  Transaction,
+  TransactionBuilder,
+} from "ivanm-js-stellar-sdk";
 
 import { HandlerSignTransactionParams, KeyTypeHandler } from "../types";
 

@@ -1,7 +1,7 @@
 import BigNumber from "bignumber.js";
+import { ServerApi } from "ivanm-js-stellar-sdk";
 import flatten from "lodash/flatten";
-import { AssetType } from "stellar-base";
-import { ServerApi } from "stellar-sdk";
+import { AssetType } from "skyhitz-stellar-base";
 
 import { makeDisplayableTrades } from "./makeDisplayableTrades";
 

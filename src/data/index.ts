@@ -1,4 +1,4 @@
-import { Asset, Horizon } from "stellar-sdk";
+import { Asset, Horizon } from "ivanm-js-stellar-sdk";
 
 import { AssetToken, Token } from "../types";
 

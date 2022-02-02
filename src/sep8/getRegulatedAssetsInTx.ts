@@ -1,4 +1,4 @@
-import { Asset, Operation, Server, Transaction } from "stellar-sdk";
+import { Asset, Operation, Server, Transaction } from "ivanm-js-stellar-sdk";
 import { RegulatedAssetInfo } from "../types/sep8";
 
 export async function getRegulatedAssetsInTx(

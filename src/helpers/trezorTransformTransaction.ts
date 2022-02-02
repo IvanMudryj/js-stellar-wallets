@@ -1,6 +1,6 @@
 // github.com/trezor/connect/blob/develop/src/js/plugins/stellar/plugin.js
 import BigNumber from "bignumber.js";
-import StellarSdk, { Asset, MemoType, MemoValue } from "stellar-sdk";
+import StellarSdk, { Asset, MemoType, MemoValue } from "ivanm-js-stellar-sdk";
 
 const transformSigner = (signer: {
   ed25519PublicKey?: string;

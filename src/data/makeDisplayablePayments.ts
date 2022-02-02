@@ -1,6 +1,6 @@
 import BigNumber from "bignumber.js";
-import { AssetType } from "stellar-base";
-import { ServerApi } from "stellar-sdk";
+import { ServerApi } from "ivanm-js-stellar-sdk";
+import { AssetType } from "skyhitz-stellar-base";
 
 import { Account, Payment, Token } from "../types";
 

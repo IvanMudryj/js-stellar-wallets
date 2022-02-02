@@ -1,4 +1,4 @@
-import StellarSdk from "stellar-sdk";
+import StellarSdk from "ivanm-js-stellar-sdk";
 
 import { HandlerSignTransactionParams, KeyTypeHandler } from "../types";
 

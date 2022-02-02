@@ -1,5 +1,5 @@
 import BigNumber from "bignumber.js";
-import { Horizon, ServerApi } from "stellar-sdk";
+import { Horizon, ServerApi } from "ivanm-js-stellar-sdk";
 
 import { BASE_RESERVE, BASE_RESERVE_MIN_COUNT } from "../constants/stellar";
 import { BalanceMap } from "../types";

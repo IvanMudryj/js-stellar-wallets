@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import StellarSdk from "stellar-sdk";
+import StellarSdk from "ivanm-js-stellar-sdk";
 import { Input, Checkbox } from "@stellar/elements";
 
 import { KeyManager, KeyManagerPlugins, KeyType } from "@stellar/wallet-sdk";

@@ -1,4 +1,3 @@
-import debounce from "lodash/debounce";
 import {
   Account as StellarAccount,
   Asset,
@@ -8,7 +7,8 @@ import {
   ServerApi,
   StrKey,
   TransactionBuilder,
-} from "stellar-sdk";
+} from "ivanm-js-stellar-sdk";
+import debounce from "lodash/debounce";
 
 import {
   Account,
@@ -549,9 +549,9 @@ export class DataProvider {
     offers: ServerApi.CollectionPage<ServerApi.OfferRecord>,
   ): Promise<Collection<Offer>> {
     // find all offerids and check for trades of each
-    const tradeRequests: Array<
-      Promise<ServerApi.CollectionPage<ServerApi.TradeRecord>>
-    > = offers.records.map(({ id }: { id: number | string }) =>
+    const tradeRequests: Array<Promise<
+      ServerApi.CollectionPage<ServerApi.TradeRecord>
+    >> = offers.records.map(({ id }: { id: number | string }) =>
       this.server
         .trades()
         .forOffer(`${id}`)
